@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" ng-app="firstApp" >
+<head >
+  <meta charset="UTF-8" >
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js" ></script >-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js" ></script >-->
+  <script src="/js/angular.min.js" ></script >
+  <script src="/js/angular-route.min.js" ></script >
+  <link rel="stylesheet" href="css/main.css" >
+  <title >Website</title >
+  <base href="/" >
+</head >
+<body ng-cloak >
+  <div class="wrapper" >
+
+    <section class="top-container" >
+      <header ><h1 >Site Title</h1 ></header >
+
+      <nav >
+        <ul >
+          <li ><a href="/" >Home</a ></li >
+          <li ><a href="/about" >About</a ></li >
+          <li ><a href="/sign-up" >Sign Up</a ></li >
+        </ul >
+      </nav >
+    </section >
+
+
+    <main class="main-container" >
+
+      <ng-view ></ng-view >
+
+    </main >
+
+
+    <section class="bottom-container" >
+      <footer >
+        <ul >
+          <li >&copy; 2015</li >
+          <li >Site Title</li >
+          <li ></li >
+        </ul >
+      </footer >
+    </section >
+  </div >
+<script rel="javascript" src="/js/module.js" ></script >
+<script rel="javascript" src="/js/controllers.js" ></script >
+<script rel="javascript" src="/js/routes.js" ></script >
+</body >
+</html >

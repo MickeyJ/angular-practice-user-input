@@ -1,0 +1,3 @@
+@mixin makeRow($boxCount, $margin){
+  width: calc(100% / #{$boxCount} - #{$margin});
+}

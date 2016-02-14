@@ -1,0 +1,55 @@
+
+.top-container{
+  z-index: 10;
+  position: fixed;
+  width: inherit;
+  background: white;
+  border-bottom: 1px solid black;
+
+  ul{
+
+    li{
+      display: inline;
+      margin-left: 1em;
+    }
+  }
+}
+
+.main-container{
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 1vw;
+
+  border-left: 2px dashed red;
+  border-right: 2px dashed red;
+  height: 100%;
+
+  .box{
+    margin: 1vw auto;
+    border: 2px dashed green;
+    @include border-radius(3px);
+  }
+}
+
+
+.bottom-container{
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  width: inherit;
+  padding: 1em 0;
+  border-top: 1px solid black;
+  background: white;
+
+  ul{
+
+    li{
+      display: inline;
+      margin-left: 1em;
+    }
+  }
+}
+
+
+

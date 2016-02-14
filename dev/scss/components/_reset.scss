@@ -1,0 +1,13 @@
+
+html, body, main, section, div, article, form, figure, header,
+footer, input, textarea, button, ul, ol, li, a, p, span, h1,
+h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+
+  //-webkit-box-sizing: border-box;
+  //-moz-box-sizing: border-box;
+  //box-sizing: border-box;
+}
+

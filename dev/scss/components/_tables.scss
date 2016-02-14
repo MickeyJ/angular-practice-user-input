@@ -1,0 +1,13 @@
+table{
+  border: 1px solid black;
+  min-width: 8em;
+  margin: 0.5em auto;
+
+  tr{
+    border: 1px solid black;
+
+    td{
+      min-width: 8em;
+    }
+  }
+}

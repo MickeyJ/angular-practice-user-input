@@ -1,0 +1,72 @@
+/** ----------------------------------------------------------- SHADOWS ----------------------------------------------------------- */
+/** ----------------------------------------------------------- GRADIENT ----------------------------------------------------------- */
+/** ----------------------------------------------------------- FLEX BOX ----------------------------------------------------------- */
+/** ----------------------------------------------------------- ROUNDED CORNERS ----------------------------------------------------------- */
+/** ----------------------------------------------------------- TRANSITION ----------------------------------------------------------- */
+html, body, .wrapper, body, main, section, div, article, form, figure, header, footer, input, textarea, button, ul, ol, li, a, p, span, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; vertical-align: baseline; }
+
+:root { font-family: Open, sans-serif; font-size: 19px; }
+
+.box p { margin: 0.5em; font-weight: 200; }
+
+h1 { font-size: 2.2em; font-weight: 300; }
+
+h2 { font-size: 1.5em; font-weight: 500; }
+
+h3 { font-size: 1.4em; font-weight: 500; }
+
+h4 { font-size: 1.3em; font-weight: 500; }
+
+h5 { font-size: 1.1em; font-weight: 500; }
+
+h6 { font-size: 0.5em; font-weight: 500; }
+
+a { font-size: 1em; text-decoration: none; }
+
+li { list-style: none; }
+
+p { font-size: 1em; }
+
+input { display: block; }
+
+.flex-row { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; -o-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; }
+
+.col1-2 { width: calc(100% / 2 - 2vw); }
+
+.col1-3 { width: calc(100% / 3 - 2vw); }
+
+.col2-3 { width: calc(100% / 1.5 - 2vw); }
+
+.col1-4 { width: calc(100% / 4 - 2vw); }
+
+.col3-4 { width: calc(100% / 1.33333 - 2vw); }
+
+.col1-6 { width: calc(100% / 6 - 2vw); }
+
+.col5-6 { width: calc(100% / 1.2 - 2vw); }
+
+html, body, .wrapper { width: 100%; height: 100%; }
+
+.top-container { z-index: 10; position: fixed; width: inherit; background: white; border-bottom: 1px solid black; }
+
+.top-container ul li { display: inline; margin-left: 1em; }
+
+.main-container { max-width: 1500px; margin: 0 auto; overflow: auto; padding: 0 1vw; border-left: 2px dashed red; border-right: 2px dashed red; height: 100%; }
+
+.main-container .box { margin: 1vw auto; border: 2px dashed green; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
+
+.bottom-container { z-index: 10; position: fixed; bottom: 0; width: inherit; padding: 1em 0; border-top: 1px solid black; background: white; }
+
+.bottom-container ul li { display: inline; margin-left: 1em; }
+
+.top-gutter { width: 100%; height: 10%; }
+
+table { border: 1px solid black; min-width: 8em; margin: 0.5em auto; }
+
+table tr { border: 1px solid black; }
+
+table tr td { min-width: 8em; }
+
+.form { width: 15em; margin: 0.5em auto; }
+
+.form input { font-size: 1em; width: inherit; }
