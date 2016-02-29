@@ -3,18 +3,13 @@
 
 <section class="flex-row" >
 
-
   <div class="box col5-6">
-
-    <h1 >{{title}}</h1 >
+    <h1 >{{message}}</h1 >
 
     <form class="form" action="/userSignUp">
-
-      <input type="text" ng-model="name" placeholder="Username">
       <input type="text" ng-model="email" placeholder="Email">
-      <input type="text" ng-model="password" placeholder="Password">
-
-      <input type="button" ng-click="newUser.getUserData(name, email, password)" value="Log In">
+      <input type="password" ng-model="password" placeholder="Password">
+      <input class='btn' type="button" ng-click="newUser(email, password)" value="Log In">
     </form >
 
   </div>
@@ -22,22 +17,15 @@
 
   <div class="box col2-3">
     <table>
-
       <tr >
-      <td >UserName: </td >
-      <td >{{userMutable[0]}}</td >
+        <td >Email: </td >
+        <td >{{userData[0]}}</td >
       </tr >
 
       <tr >
-      <td >Email: </td >
-      <td >{{userMutable[1]}}</td >
+        <td >Password: </td >
+        <td >{{userData[1]}}</td >
       </tr >
-
-      <tr >
-      <td >Password: </td >
-      <td >{{userMutable[2]}}</td >
-      </tr >
-
     </table>
   </div>
 

@@ -27,42 +27,15 @@ app.controller("AboutController", function($scope, $http){
 
 app.controller("SignUpController", function($scope, $http){
 
-  $scope.userMutable = [];
+  $scope.userData = [];
 
-  function User(){}
-
-  $scope.newUser = new User();
-
-  User.prototype.getUserData = function(){
-
-    var userImmutable = [];
-
-    var args = Array.prototype.slice.call(arguments);
-
-    args.forEach(function(x){
-      userImmutable.push(x);
-      $scope.userMutable.push(x);
-    });
-
-    var userData = {
-      username: "nada",
-      email:    "nada",
-      password: "nada",
-
-      set setUserData(array){
-        var props     = array;
-        this.username = props[0] || '';
-        this.email    = props[1] || '';
-        this.password = props[2] || '';
-      }
-    };
-    userData.setUserData = userImmutable;
-
-    return JSON.stringify(userData, null, '\n\t');
+  $scope.newUser = function(email, pass){
+    $scope.userData.push(email, pass);
   };
 
+
   $scope.title = "Sign Up";
-  $scope.message = "Hey!";
+  $scope.message = "You Sign Up Now";
 
   $http.get('/userSignUp').then(function(res){
 

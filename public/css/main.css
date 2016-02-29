@@ -70,3 +70,5 @@ table tr td { min-width: 8em; }
 .form { width: 15em; margin: 0.5em auto; }
 
 .form input { font-size: 1em; width: inherit; }
+
+.form .btn { width: 50px; margin: 0 auto; }
